@@ -1,5 +1,6 @@
 import { getClient } from '~/util/awclient';
 import { v4 as uuid } from 'uuid';
+import type { Entry } from './booking';
 
 export type Billing = 'inherited' | 'tm' | 'fixed' | 'non_billable';
 export interface ProjectNode {
@@ -32,6 +33,7 @@ export interface Snapshot {
   settings: Settings;
   nodes: ProjectNode[];
   mappings: Mapping[];
+  entries?: Entry[];
 }
 
 export function workspaceDate(timezone: string, now = new Date()): string {

@@ -49,8 +49,8 @@ From this checkout:
 ```
 
 The script fails immediately on errors, prepares upstream logo assets, checks
-changed UI/test files with zero lint warnings, runs 15 tests (seven new project
-tests plus eight existing router tests), then builds production assets in `dist/`.
+changed UI/test files with zero lint warnings, runs 21 project/booking/router
+tests, then builds production assets in `dist/`.
 GitHub Actions is unavailable and is not used. Inherited workflows are untouched.
 Upstream Sass/Babel deprecation and bundle-size notices remain build warnings.
 
@@ -88,7 +88,9 @@ verifies process-independent SQLite durability/reopen.
 This is development-host evidence, not installed AW/reboot/lifecycle evidence.
 No macOS/Linux/Android runtime or Python-host browser check is claimed.
 
-Manual timeline booking, time entries, review/export/report states, immutable
-report snapshots, enrichment and rules remain later stages. Stage 1's audit
+Manual timeline booking and separate time entries are now implemented; see
+[Manual booking](manual-booking.md), including task creation directly in Assign.
+Review/export/report states, immutable report snapshots, enrichment and rules
+remain later stages. Stage 1's audit
 snapshots are stored by the backend but have no history viewer yet. There is no
 installer, production host replacement or multi-device domain synchronization.

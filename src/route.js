@@ -20,6 +20,7 @@ const Settings = () => import('./views/settings/Settings.vue');
 const Stopwatch = () => import('./views/Stopwatch.vue');
 const WorkReport = () => import('./views/WorkReport.vue');
 const Projects = () => import('./views/Projects.vue');
+const ProjectBooking = () => import('./views/ProjectBooking.vue');
 const BillingView = () => import('./views/BillingView.vue');
 const AISummaryView = () => import('./views/AISummaryView.vue');
 const Alerts = () => import('./views/Alerts.vue');
@@ -86,6 +87,7 @@ const router = new VueRouter({
     { path: '/stopwatch', component: Stopwatch },
     { path: '/work-report', component: WorkReport },
     { path: '/projects', component: Projects },
+    { path: '/project-booking', component: ProjectBooking, meta: { fullContainer: true } },
     { path: '/billing', component: BillingView },
     { path: '/analysis/activity', component: AISummaryView },
     { path: '/search', component: Search },

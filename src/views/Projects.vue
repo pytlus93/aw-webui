@@ -7,8 +7,8 @@
       </button>
     </div>
     <p class="text-muted">
-      Organize work, billing and dated reporting IDs. Time booking and report exports are coming in
-      the next stages.
+      Organize work, billing and dated reporting IDs. Use Manual time booking to assign captured or
+      offline work. Report exports are coming in the next stage.
     </p>
     <div v-if="unsupported" class="alert alert-info">
       Project tracking requires the extended Rust server. This server does not provide the module.

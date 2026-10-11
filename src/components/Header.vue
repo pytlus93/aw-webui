@@ -71,6 +71,9 @@ div(:class="{'fixed-top-padding': fixedTopMenu}")
           b-dropdown-item(to="/projects")
             icon(name="briefcase")
             | Projects & tasks
+          b-dropdown-item(to="/project-booking")
+            icon(name="stream")
+            | Manual time booking
           b-dropdown-item(to="/billing")
             icon(name="dollar-sign")
             | Billable Hours
