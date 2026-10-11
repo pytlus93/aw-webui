@@ -26,3 +26,6 @@ test/e2e/reports
 
 # python
 __pycache__
+
+# Local validation output.
+/*-projects.log

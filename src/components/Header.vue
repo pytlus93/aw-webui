@@ -68,6 +68,9 @@ div(:class="{'fixed-top-padding': fixedTopMenu}")
           b-dropdown-item(to="/work-report")
             icon(name="briefcase")
             | {{ $t('nav.workReport') }}
+          b-dropdown-item(to="/projects")
+            icon(name="briefcase")
+            | Projects & tasks
           b-dropdown-item(to="/billing")
             icon(name="dollar-sign")
             | Billable Hours
